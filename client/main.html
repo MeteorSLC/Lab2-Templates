@@ -1,0 +1,18 @@
+<head>
+  <title>Twitter Wall</title>
+</head>
+
+<body>
+  <h1>Welcome to Meteor SLC!</h1>
+
+  {{> hello}}
+</body>
+
+<template name="hello">
+  <button id="counter">Click Me</button>
+  <p>You've pressed the button {{counter}} times.</p>
+  <p>Twitter Feed</p>
+  <input id="TwitQuery" type="text"/><button id="TwitStart" class="{{twitRunning}}">Start</button>
+  <button id="TwitStop">Stop</button>
+  
+</template>
