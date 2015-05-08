@@ -11,7 +11,7 @@ Meteor.methods({
   TwitterStream: function (query) {
     if (query == 'off') {
       if (_.isFunction(stream.stop)) stream.stop();
-      Tweets.remove({});
+      //Tweets.remove({});
       return;
     }
     stream = Twit.stream('statuses/filter', {

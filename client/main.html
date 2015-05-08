@@ -6,6 +6,7 @@
   <h1>Welcome to Meteor SLC!</h1>
 
   {{> hello}}
+  {{> TwitWall}}
 </body>
 
 <template name="hello">
@@ -15,4 +16,16 @@
   <input id="TwitQuery" type="text"/><button id="TwitStart" class="{{twitRunning}}">Start</button>
   <button id="TwitStop">Stop</button>
   
+</template>
+
+<template name="TwitWall">
+<p>Twitter Wall</p>
+  {{#each Tweets}}
+    <div class="tweet">{{text}}</div>
+    <div class="user">-{{user}}</div>
+  {{/each}}
+</template>
+
+<template name="reza">
+  <h1>Bye Reza!</h1>
 </template>
